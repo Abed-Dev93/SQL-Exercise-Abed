@@ -1,0 +1,8 @@
+select * from students
+SELECT name FROM students;
+SELECT * FROM students WHERE Age>30;
+SELECT name FROM students WHERE Gender='F' AND Age=30;
+SELECT Points FROM students WHERE name='Alex';
+INSERT INTO students (name, Age, Gender, Points) VALUES ('Samir', 31, 'M', 450);
+UPDATE students SET points=600 WHERE name='Basma';
+UPDATE students set Points=150 WHERE name='Alex';
