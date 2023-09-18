@@ -6,3 +6,7 @@ SELECT Points FROM students WHERE name='Alex';
 INSERT INTO students (name, Age, Gender, Points) VALUES ('Samir', 31, 'M', 450);
 UPDATE students SET points=600 WHERE name='Basma';
 UPDATE students set Points=150 WHERE name='Alex';
+
+INSERT INTO graduates (ID, Name, Age, Gender, Points) SELECT * FROM students WHERE name='Layal';
+UPDATE graduates SET Graduation='08-09-2018' WHERE name='Layal';
+DELETE FROM students WHERE id=4;
